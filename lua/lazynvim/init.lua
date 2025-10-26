@@ -40,6 +40,8 @@ M.bootstrap = function()
             "hrsh7th/nvim-cmp",
             "hrsh7th/cmp-vsnip",
             "hrsh7th/vim-vsnip",
+
+            "mbbill/undotree",
         },
         -- Configure any other settings here. See the documentation for more details.
         -- colorscheme that will be used when installing plugins.
