@@ -28,3 +28,6 @@ vim.api.nvim_set_hl(0, "@comment", { fg = colors.dark_grey })
 
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = colors.dark_grey })
 vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = colors.dark_grey })
+
+vim.api.nvim_set_hl(0, "Normal", { bg = "#191d25" })
+vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#242830" })
