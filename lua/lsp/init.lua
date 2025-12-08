@@ -91,7 +91,20 @@ vim.lsp.config.luals = {
     }
 }
 
+vim.lsp.config.ts_server = {
+    cmd = { "typescript-language-server", "--stdio" },
+    filetypes = { "javascript", "typescript" },
+    root_markers = { "package.json", "tsconfig.json", "jsconfig.json", ".git" },
+}
+
+vim.lsp.config.clangd = {
+    cmd = { "clangd", "--background-index", "--clang-tidy", "--log=verbose" },
+}
+
 vim.lsp.enable({
     "luals",
     "gopls",
+    "ts_server",
+    "clangd",
+    "html",
 })

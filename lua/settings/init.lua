@@ -1,7 +1,16 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
+
 vim.opt.wrap = false
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "html",
+    callback = function()
+        vim.opt_local.wrap = true
+        vim.opt_local.linebreak = true
+        vim.opt_local.textwidth = 0
+    end
+})
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
