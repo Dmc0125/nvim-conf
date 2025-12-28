@@ -101,6 +101,20 @@ vim.lsp.config.clangd = {
     cmd = { "clangd", "--background-index", "--clang-tidy", "--log=verbose" },
 }
 
+vim.lsp.config.html = {
+    cmd = { "vscode-html-language-server", "--stdio" },
+    filetypes = { "html", "svg" },
+    settings = {
+        html = {
+            format = {
+                wrapLineLength = 80, -- Set your desired max line length here
+                wrapAttributes = "aligned-multiple",
+                templating = true,
+            },
+        },
+    },
+}
+
 vim.lsp.enable({
     "luals",
     "gopls",

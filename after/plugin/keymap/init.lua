@@ -112,3 +112,7 @@ local create_sql_query_annotation = function()
 end
 
 map("n", "<leader>qa", create_sql_query_annotation)
+
+map("n", "<leader>ln", function()
+    vim.wo.wrap = not vim.wo.wrap
+end)

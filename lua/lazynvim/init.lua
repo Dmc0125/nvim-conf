@@ -42,6 +42,23 @@ M.bootstrap = function()
             "hrsh7th/vim-vsnip",
 
             "mbbill/undotree",
+
+            "folke/zen-mode.nvim",
+
+            "ThePrimeagen/vim-be-good",
+
+            {
+                "supermaven-inc/supermaven-nvim",
+                config = function()
+                    require("supermaven-nvim").setup({
+                        condition = function()
+                            return string.match(vim.fn.expand("%:t"), ".env")
+                        end,
+                    })
+                end,
+            },
+
+            "sindrets/diffview.nvim",
         },
         -- Configure any other settings here. See the documentation for more details.
         -- colorscheme that will be used when installing plugins.
