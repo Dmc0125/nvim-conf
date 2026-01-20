@@ -6,5 +6,6 @@ vim.opt.shellxquote = ""
 require("lazynvim").bootstrap()
 require("settings")
 require("lsp")
-require("colors")
+-- require("colors")
+vim.cmd("colorscheme tokyonight-night")
 require("treesitter.injections")

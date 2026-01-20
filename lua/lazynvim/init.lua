@@ -58,7 +58,14 @@ M.bootstrap = function()
                 end,
             },
 
-            "sindrets/diffview.nvim",
+            { "sindrets/diffview.nvim", config = { use_icons = false } },
+
+            {
+                "folke/tokyonight.nvim",
+                lazy = false,
+                priority = 1000,
+                opts = {},
+            },
         },
         -- Configure any other settings here. See the documentation for more details.
         -- colorscheme that will be used when installing plugins.

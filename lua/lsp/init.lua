@@ -121,4 +121,6 @@ vim.lsp.enable({
     "ts_server",
     "clangd",
     "html",
+    "rust_analyzer",
+    "ols",
 })
