@@ -13,8 +13,11 @@ map("n", "<leader>y", "\"+y")
 map("v", "<leader>y", "\"+y")
 
 -- jump by screen but stay in the middle
-map("v", "<C-d>", "<C-d>zz")
-map("v", "<C-u>", "<C-u>zz")
+-- map("v", "<C-d>", "<C-d>zz")
+-- map("v", "<C-u>", "<C-u>zz")
+--
+-- map("n", "<C-d>", "<C-d>zz")
+-- map("n", "<C-u>", "<C-u>zz")
 
 -- paste/delete while preserving the buffer
 map("x", "<leader>p", "\"_dP")

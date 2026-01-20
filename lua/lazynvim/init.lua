@@ -17,6 +17,8 @@ M.bootstrap = function()
     end
     vim.opt.rtp:prepend(lazypath)
 
+    -- neoscroll_setup()
+
     require("lazy").setup({
         spec = {
             {
@@ -66,11 +68,11 @@ M.bootstrap = function()
                 priority = 1000,
                 opts = {},
             },
+            {
+                "karb94/neoscroll.nvim",
+                opts = {},
+            },
         },
-        -- Configure any other settings here. See the documentation for more details.
-        -- colorscheme that will be used when installing plugins.
-        -- install = { colorscheme = { "habamax" } },
-        -- automatically check for plugin updates
         checker = { enabled = false },
     })
 end
